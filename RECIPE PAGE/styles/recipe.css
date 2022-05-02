@@ -1,0 +1,78 @@
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/ > html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Poppins", sans-serif;
+    background-color: #ecdbc5;
+    color: #422800;
+  }
+  
+  #main {
+    display: block;
+    position: relative;
+    margin: 40px auto;
+    height: auto;
+    width: 400px;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 15px;
+    margin-top: -20px;
+    background-color: #f7ede4;
+    color: #eb8f4c;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .recipe-summary {
+    color: #eb8f4c;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    width: 60%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .recipe-summary p{
+    font-size: 0.8em;
+  }
+  
+  .recipe-name {
+    color: #fff;
+    background-color: #eb8f4c;
+    padding: 20px 40px;
+    border-radius: 25px;
+  }
+  
+  .recipe-name p {
+    margin-bottom: 0px;
+  }
+  
+  .recipe-name h3 {
+    font-size: 2em;
+    margin-top: 0px;
+    
+  }
+  
+  .detail{
+    margin: 20px;
+  }
+   
+  
+  .detail h2 {
+    text-decoration: underline;
+  }
+  
