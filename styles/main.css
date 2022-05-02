@@ -108,7 +108,7 @@ html {
       margin: 30px;
   }
   
-  .selecotr-item{
+  .selector-item{
       position:relative;
       flex-basis:calc(100% / 3);
       height:100%;
@@ -140,63 +140,73 @@ html {
       color:#fff;
       box-shadow:0 0 4px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.5);
       transform:translateY(-2px);
+    }
+
   
-  /*
-  .form-group {
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    display: grid;
-    grid-template-columns: repeat(2, 20px 1fr) 20px;
-    gap: 2em 0.5em;
-    text-align: left;
-    font-weight: 300;
-  }
-  
-  
-  lable {
-    text-align: left;
-  }
-  
-  input[type="radio"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: var(--form-background);
-    margin: 0;
+/* recipe page */
+
+
+      .recipe-summary {
+        color: #eb8f4c;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 25px;
+        margin-bottom: 30px;
+        width: 60%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .recipe-summary p{
+        font-size: 0.8em;
+      }
+
+      
+      
+      .recipe-name {
+        color: #fff;
+        background-color: #eb8f4c;
+        padding: 20px 40px;
+        border-radius: 25px;
+      }
+      
+      .recipe-name p {
+        margin-bottom: 0px;
+      }
+      
+      .recipe-name h3 {
+        font-size: 2em;
+        margin-top: 0px;
+        
+      }
+      
+      .detail{
+        margin: 20px;
+      }
+       
+      
+      .detail h2 {
+        text-decoration: underline;
+      }
+      
     
+
+/*footer*/
+    
+    footer{
+        background-color: #eb8f4c;
+        position: fixed;
+        bottom: 0; 
+        align-content: center;
+    }
+    
+    footer #home-button {
+        left: 0;
+    }
   
-    font: inherit;
-    color: currentColor;
-    width: 1.15em;
-    height: 1.15em;
-    border: 0.15em solid currentColor;
-    border-radius: 50%;
-    transform: translateY(-0.075em);
-  
-    display: grid;
-    place-content: center;
-  }
-  
-  input[type="radio"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-    background-color: CanvasText;
-  }
-  
-  input[type="radio"]:checked::before {
-    transform: scale(1);
-  }
-  
-  input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid currentColor;
-    outline-offset: max(2px, 0.15em);
-  }
-  
-  */
-  
+    footer span {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        text-align: center;}
