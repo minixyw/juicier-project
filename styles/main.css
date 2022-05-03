@@ -248,22 +248,33 @@ html {
         margin-left: auto;
         margin-right: auto;
       }
+
+      .detail p {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
        
       .detail ul {
         text-align: center;
         padding-left: 0;
-        list-style-type: none;}
+        list-style-type:none;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       
    
       .detail h2 {
         text-decoration: underline;
+        padding-top: 20px;
       }
       
       .detail ol {
         list-style: none;
         counter-reset: item;
-        text-align: center;
+        text-align:center;
+        padding-inline-start: 10px;
+        padding-right: 10px;
       }
       .detail ol li {
         counter-increment: item;
@@ -298,21 +309,24 @@ html {
       align-items: center;
       float:left;
       text-align: center;
+      justify-content: center;
+      padding-left: 40%
 
     }
 
     .footer-button #home-button{
 
       background-color:#eb8f4c; 
+      text-align:center;
       border: none; 
       color: white; 
-      padding: 12px 16px; 
+      padding: 12px 16px;
       font-size: 16px; 
       cursor: pointer; 
         
       }
 
-      .footer-button #back-button:hover {
+      .footer-button #home-button:hover {
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
       }
 
@@ -335,3 +349,47 @@ html {
   /* result page */
 
 
+
+  /* media query */
+
+  @media screen and (min-width: 700px) {
+    .recipe-name #recipe-img {
+      width: 50%;
+      margin-left: 16px;
+      border-radius:50%;
+    }
+    .recipe-name {
+      justify-content: space-evenly;
+    }
+  }
+
+  @media screen and (min-width: 1000px){
+    .recipe-summary {
+      max-width: 60%;
+    }
+
+    .recipe-name {
+      max-width: 60%;
+    }
+    
+    .detail {
+      max-width: 60%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
+      list-style-type: none;
+    }
+
+    .detail p ul ol {
+      text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .detail ul {
+      list-style-type:circle;
+    }
+  }
+    
+  
+  
