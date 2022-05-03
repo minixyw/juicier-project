@@ -28,10 +28,14 @@ function getUserInput() {
         }
     });
     console.log(choices);
-    storeUserInput();
+    storeUserInput(choices);
 }
 
-function storeUserInput(){
-   localStorage.setItem('result', choices);
+function storeUserInput(data){
+    console.log(data);
+   localStorage.setItem('dairy', data.dairy);
+   localStorage.setItem('calories', data.calories);
+   localStorage.setItem('flavor', data.flavor);
    window.location.href="./result.html";
+
 }
