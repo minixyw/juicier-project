@@ -159,7 +159,7 @@ html {
       }
       
       .recipe-summary p{
-        font-size: 0.8em;
+        font-size: 1em;
       }
 
       
@@ -199,6 +199,10 @@ html {
         position: fixed;
         bottom: 0; 
         align-content: center;
+    }
+
+    .footer-button {
+      
     }
     
     footer #home-button {
