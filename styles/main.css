@@ -21,34 +21,59 @@ html {
     position: relative;
     margin: 40px auto;
     height: auto;
-    width: 500px;
+    min-width: 400px;
     padding: 20px;
   }
   
   header {
     text-align: center;
+    min-width: 440px;
     padding: 15px;
     margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
     background-color: #f7ede4;
     color: #eb8f4c;
     font-family: "Poppins", sans-serif;
   }
   
+  header #container-head {
+    border-bottom: 1px solid #f7ede4;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:0px;
+  }
+
+  header #container-head img {
+    max-width: 55px;
+    float: center;
+    margin: 10px;
+  }
+
+  header #container-head h1 {
+    margin: 0;
+    float: center;
+    padding-top: 20px;
+    margin: 10px;
+  }
   
+
+
+
   h2 {
     text-align: center;
-    padding-bottom: 25px;
   }
   
   h3 {
     text-align: center;
     font-style: italic;
-    padding-bottom:20px;
   }
   
   p {
     text-align: center;
-    padding: 20px;
     font-weight: 500;
   }
   
@@ -97,7 +122,8 @@ html {
   /*radio*/
   .selector{
       position:relative;
-      width:80%;
+      max-width: 400px;
+      width:90%;
       background-color:#f1f3f5;
       height:70px;
       display:flex;
@@ -106,6 +132,8 @@ html {
       border-radius:9999px;
       box-shadow:0 0 16px rgba(0,0,0,.2);
       margin: 30px;
+      margin-left: auto;
+      margin-right: auto;
   }
   
   .selector-item{
@@ -151,8 +179,8 @@ html {
         background-color: #fff;
         padding: 20px;
         border-radius: 25px;
-        margin-bottom: 30px;
-        width: 60%;
+        margin-bottom: 25px;
+        max-width: 80%;
         align-content: center;
         margin-left: auto;
         margin-right: auto;
@@ -160,36 +188,97 @@ html {
       
       .recipe-summary p{
         font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
       
       
       .recipe-name {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         color: #fff;
         background-color: #eb8f4c;
-        padding: 20px 40px;
+        padding: 20px 0px 20px 40px;
         border-radius: 25px;
+        
       }
       
+      .recipe-name h2 {
+        text-align:left;
+        padding-bottom: 25px;
+      }
+
       .recipe-name p {
         margin-bottom: 0px;
+        text-align:left;
+        padding: 0px;
       }
       
       .recipe-name h3 {
         font-size: 2em;
         margin-top: 0px;
+        text-align:left;
+        padding-top: 20px;
         
       }
       
+      .recipe-name #recipe-img {
+        float: right;
+        padding-left: 20px;
+        padding-right: 0px;
+        width:125px;
+        height: 250px;
+        border-radius:250px 0 0 250px;
+  
+      }
+
+
       .detail{
         margin: 20px;
+        display: block;
+        width: 80%;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
       }
        
+      .detail ul {
+        text-align: center;
+        padding-left: 0;
+        list-style-type: none;}
+      }
       
+   
       .detail h2 {
         text-decoration: underline;
       }
       
+      .detail ol {
+        list-style: none;
+        counter-reset: item;
+        text-align: center;
+      }
+      .detail ol li {
+        counter-increment: item;
+        margin-bottom: 5px;
+      }
+      .detail ol li:before {
+        margin-right: 10px;
+        content: counter(item);
+        background: #eb8f4c;
+        border-radius: 100%;
+        color: white;
+        width: 1.2em;
+        text-align: center;
+        display: inline-block;
+      }
     
 
 /*footer*/
@@ -243,4 +332,6 @@ html {
       }
 
    
-  
+  /* result page */
+
+
