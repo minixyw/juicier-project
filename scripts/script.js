@@ -1,5 +1,5 @@
 const dairyChoices = Array.from(document.getElementsByName("dairy"));
-const caloriesChoices = Array.from(document.getElementsByName("calories"));
+const caloriesChoices = Array.from(document.getElementsByName("calorieValue"));
 const flavorChoices = Array.from(document.getElementsByName("flavor"));
 
 const startBtn = document.querySelector("#btn-start");
@@ -8,7 +8,7 @@ startBtn.addEventListener("click", getUserInput);
 function getUserInput() {
     let choices = {
         dairy: null,
-        calories: null,
+        calorieValue: null,
         flavor: null
     };
     console.log(dairyChoices);
@@ -19,7 +19,7 @@ function getUserInput() {
     });
     caloriesChoices.forEach(item => {
         if ( item.checked) {
-            choices.calories = item.value;
+            choices.calorieValue = item.value;
         }
     });
     flavorChoices.forEach(item => {
@@ -34,7 +34,7 @@ function getUserInput() {
 function storeUserInput(data){
     console.log(data);
    localStorage.setItem('dairy', data.dairy);
-   localStorage.setItem('calories', data.calories);
+   localStorage.setItem('calorieValue', data.calorieValue);
    localStorage.setItem('flavor', data.flavor);
    window.location.href="./result.html";
 

@@ -9,6 +9,7 @@ html {
   }
   
   body {
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     font-family: "Poppins", sans-serif;
@@ -310,7 +311,7 @@ html {
       float:left;
       text-align: center;
       justify-content: center;
-      padding-left: 40%
+      padding-left: 40%;
 
     }
 
@@ -392,4 +393,19 @@ html {
   }
     
   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
