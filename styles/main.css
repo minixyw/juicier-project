@@ -387,7 +387,91 @@ html {
         padding-right: 10px;
     }
 
-    .detail ul {
-      list-style-type:circle;
-    }
   }
+
+
+/* card design */
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px;
+  padding: 50px;
+  column-gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f7ede4;
+  border-radius: 50px;
+
+}
+
+.card img {
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+
+}
+
+.card h2 {
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  color: #eb8f4c;
+}
+
+.card h3 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  padding: 20px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.card a{
+  margin: 20px;
+}
+
+.card a:link, a:visited {
+    background-color: #eb8f4c;
+    border-radius: 15px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card a:hover {
+  background-color: white;
+  color: #eb8f4c;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+  #main {
+    text-align: center;
+  }
+  .card {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7ede4;
+    border-radius: 50px;
+    flex-direction: column;
+  }
+
+  .card h3 {
+    max-width: 80%;
+    padding: 0;
+  }
+}
