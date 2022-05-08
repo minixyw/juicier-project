@@ -533,7 +533,7 @@ let chosenRecipe = [];
     image.src = item.image;
     const link = document.createElement("a");
     link.setAttribute("id", "links");
-    link.href = "recipe.html";
+    link.href = "newrecipe.html";
     link.textContent = 'link';
     container.appendChild(card);
     card.appendChild(h2);
