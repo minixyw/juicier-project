@@ -1,5 +1,6 @@
 const recipeData = [
   {
+  id: 'slug-1',
   name: 'Blueberry Strawberry Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -12,7 +13,9 @@ const recipeData = [
   direction: ['Add milk, blueberries, strawberries and yogurt to a blender', 'Mix until smooth! If you are using fresh fruit, you may need to add ice to thicken it. Enjoy cold.'],
   nutrition: "Strawberries provide fiber, potassium, folate and antioxidants, but they also ccontain several bioactive compounds (called flavonoids) that are known to help protect against chronic diseases." 
   },
-  { name: 'Banana Smoothie',
+  { 
+    id: 'slug-2',
+  name: 'Banana Smoothie',
   dairy: 'true',
   flavor: 'fruity',
   calorieValue: 'low',
@@ -25,6 +28,7 @@ const recipeData = [
   nutrition: "One serving, or one medium ripe banana, provides about 110 calories, 0 gram fat, 1 gram protein, 28 grams carbohydrate, 15 grams sugar (naturally occurring), 3 grams fiber, and 450 mg potassium." 
   },
   {
+    id: 'slug-3',
   name: 'Spinach Smoothie',
   dairy: 'true',
   flavor: 'veggie',
@@ -38,6 +42,7 @@ const recipeData = [
   nutrition: "High in calcium, more than other vegetables; Very high in Vitamin K and Vitamin A; Low in calories (1 cup of raw spinach has 45 calories)" 
   },
   {
+    id: 'slug-4',
   name: 'Peanut Butter Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -51,6 +56,7 @@ const recipeData = [
   nutrition: "Nutritional benefits of peanut butter. Share on Pinterest Peanut butter is a good source of protein and vitamin B-6. Peanut butter provides a good amount of protein, along with essential vitamins and minerals, such as magnesium, potassium, and zinc." 
   },
   {
+    id: 'slug-5',
   name: 'Mango Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -64,6 +70,7 @@ const recipeData = [
   nutrition: "Mangoes are a nutritious tropical fruit that are low in calories, a good source of vitamin A and fiber, and an excellent source of vitamin C." 
   },
   {
+    id: 'slug-6',
   name: 'Watermelon Smoothie',
   dairy: 'false',
   flavor: 'fruity',
@@ -77,6 +84,7 @@ const recipeData = [
   nutrition: "Watermelon is a flowering plant species of the Cucurbitaceae family and the name of its edible fruit. A scrambling and trailing vine-like plant, it is a highly cultivated fruit worldwide, with more than 1,000 varieties." 
   },
   {
+    id: 'slug-7',
   name: 'Matcha Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -90,6 +98,7 @@ const recipeData = [
   nutrition: "Watermelon is a flowering plant species of the Cucurbitaceae family and the name of its edible fruit. A scrambling and trailing vine-like plant, it is a highly cultivated fruit worldwide, with more than 1,000 varieties." 
   },
   {
+    id: 'slug-8',
   name: 'Peach Mango Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -103,6 +112,7 @@ const recipeData = [
   nutrition: "It provides 6% of your daily vitamin A needs and 15% of daily vitamin C needs. One medium peach also contains 2% or more daily value of vitamins E and K, niacin, folate, iron, choline, potassium, magnesium, phosphorus, manganese, zinc and copper." 
   },
   {
+    id: 'slug-9',
   name: 'Pomegranate Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -116,6 +126,7 @@ const recipeData = [
   nutrition: "There are lots of inflated claims around pomegranate nutrition. In fact, a popular pomegranate products company was hit with an FTC complaint around false advertising about reducing the risk of cancer and heart disease. That said, pomegranates are a very healthy fruit that is part of a healthy diet!" 
   },
   {
+    id: 'slug-10',
   name: 'Dragon Fruit Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -129,6 +140,7 @@ const recipeData = [
   nutrition: "Dragon fruit is high in vitamin C and other antioxidants, which are good for your immune system. It can boost your iron levels. Iron is important for moving oxygen through your body and giving you energy, and dragon fruit has iron. And the vitamin C in dragon fruit helps your body take in and use the iron" 
   },
   {
+    id: 'slug-11',
   name: 'Orange Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -142,6 +154,7 @@ const recipeData = [
   nutrition: "An orange is a fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus x sinensis, which is also called sweet orange, to distinguish it from the related Citrus x aurantium, referred to as bitter orange." 
   },
   {
+    id: 'slug-12',
   name: 'Cinnamon Apple Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -155,6 +168,7 @@ const recipeData = [
   nutrition: "Apples are a good source of vitamin C: 1 apple contains 14% of your daily needs; They are full of fiber and water: 1 apple has 4 grams fiber or about 15% of your daily needs; Apples contain pectin, a type of fiber that acts as a prebiotic and helps with gut health; Most of the nutrients in apples are in the skin, so you should eat the skin as much as possible. That is why we included the skin in this apple smoothie." 
   },
   {
+    id: 'slug-13',
   name: 'Grape Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -167,6 +181,7 @@ const recipeData = [
   nutrition: "Grapes are a good source of potassium, a mineral that helps balance fluids in your body. Potassium can help bring down high blood pressure and lower your risk of heart disease and stroke. " 
   },
   {
+    id: 'slug-14',
   name: 'Pineapple Smoothie',
   dairy: 'true',
   flavor: 'fruity',
@@ -180,6 +195,7 @@ const recipeData = [
   nutrition: "Pineapple is low in calories. 1 cup pineapple chunks has 80 calories. Pineapple is especially rich in Vitamin C: 1 cup provides 131% of your daily value. Pineapple contains disease-fighting antiox." 
   },
   {
+    id: 'slug-15',
   name: 'Carrot Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -193,6 +209,7 @@ const recipeData = [
   nutrition: "Low in calories, high in fiber: One cup of chopped carrots has only 52 calories and 3.6 grams of fiber. Packed with Vitamin A (beta carotene): This veggie has 428% of your daily vitamin A in 1 cup! It is present as beta-carotene, an antioxidant that could help in cancer prevention. Your body converts beta carotene into Vitamin A. High in Vitamins C, K and potassium: They are also are high in these vitamins. Potential benefits include lower blood cholesterol, weight loss, and eye health." 
   },
   {
+    id: 'slug-16',
   name: 'Easy Cucumber Smoothie',
   dairy: 'true',
   flavor: 'veggie',
@@ -206,6 +223,7 @@ const recipeData = [
   nutrition: "Low in calories. 1 cup has only 16 calories. High in Vitamin K and more. You will get 62% of your daily need, 14% of your daily Vitamin C, and 13% of your daily potassium. Contains antioxidants and micronutrients." 
   },
   {
+    id: 'slug-17',
   name: 'Perfect Avocado Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -219,6 +237,7 @@ const recipeData = [
   nutrition: "Avocados are a source of vitamins C, E, K, and B6, as well as riboflavin, niacin, folate, pantothenic acid, magnesium, and potassium. They also provide lutein, beta carotene, and omega-3 fatty acids. Avocados contain high levels of healthy, beneficial fats, which can help a person feel fuller between meals." 
   },
   {
+    id: 'slug-18',
   name: 'Broccoli Smoothie',
   dairy: 'true',
   flavor: 'veggie',
@@ -232,6 +251,7 @@ const recipeData = [
   nutrition: "It is a great source of fiber. 1 cup of raw broccoli has 2.3 grams of fiber, or about 5 to 10% of your daily need. It is very high in Vitamin C. ½ cup has 70% your daily value of Vitamin C! It is relatively high in protein for a green vegetable. 1 cup has 3 grams protein. That is a similar level to asparagus and potatoes." 
   },
   {
+    id: 'slug-19',
   name: 'Kale Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -245,6 +265,7 @@ const recipeData = [
   nutrition: "Kale is a nutrition superstar due to the amounts of vitamins A, K, B6 and C, calcium, potassium, copper and manganese it contains." 
   },
   {
+    id: 'slug-20',
   name: 'Vanilla Protein Smoothie',
   dairy: 'true',
   flavor: 'veggie',
@@ -258,6 +279,7 @@ const recipeData = [
   nutrition: "Many health promoting elements such as vitamins, minerals, essential oils and complex sugars are present in vanilla. It contains traces of niacin, thiamine and other B complex vitamins." 
   },
   {
+    id: 'slug-21',
   name: 'Dairy-free Acai Smoothie',
   dairy: 'false',
   flavor: 'fruity',
@@ -271,6 +293,7 @@ const recipeData = [
   nutrition: 'Acai berries are a Brazilian “superfruit.” Acai berries contain healthy fats and low amounts of sugar, as well as many trace minerals and plant compounds, including anthocyanins.' 
   },
   {
+    id: 'slug-22',
   name: 'Glowing Green Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -284,6 +307,7 @@ const recipeData = [
   nutrition: 'Three cups of fresh spinach provide more than three times your daily vitamin K needs (340%). You also get roughly 25% of your recommended vitamin C intake and 10% of your suggested potassium intake from a three-cup serving of spinach.' 
   },
   {
+    id: 'slug-23',
   name: 'Beet Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -297,6 +321,7 @@ const recipeData = [
   nutrition: 'Beets are highly nutritious and “cardiovascular health” friendly root vegetables. Certain unique pigment antioxidants in this root and its top greens have been found to offer protection against coronary artery disease and stroke, lower cholesterol levels within the body, and have anti-aging effects.' 
   },
   {
+    id: 'slug-24',
   name: 'Dairy-free Kale Smoothie',
   dairy: 'false',
   flavor: 'veggie',
@@ -310,6 +335,7 @@ const recipeData = [
   nutrition: 'Kale is a nutrition superstar due to the amounts of vitamins A, K, B6 and C, calcium, potassium, copper and manganese it contains. One cup of raw kale has just 33 calories and only 7 grams of carbohydrate.' 
   },
   {
+    id: 'slug-25',
   name: 'Celery Smoothie',
   dairy: false,
   flavor: 'veggie',
@@ -323,6 +349,7 @@ const recipeData = [
   nutrition: 'You will enjoy vitamins A, K, and C, plus minerals like potassium and folate when you eat celery. It is also low in sodium. Plus, it is low on the glycemic index, meaning it has a slow, steady effect on your blood sugar.' 
   },
   {
+    id: 'slug-26',
   name: 'Watermelon Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -336,6 +363,7 @@ const recipeData = [
   nutrition: 'A fully ripe red watermelon contains higher levels of nutrients than less ripe watermelon. A single serving of watermelon is a good source of vitamin C and vitamin A, providing a significant percentage of your daily requirement for each.' 
   },
   {
+    id: 'slug-27',
   name: 'Coconut Milk Strawberry Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -349,6 +377,7 @@ const recipeData = [
   nutrition: 'Strawberries provide fiber, potassium, folate and antioxidants, but they also ccontain several bioactive compounds (called flavonoids) that are known to help protect against chronic diseases.' 
   },
   {
+    id: 'slug-28',
   name: 'Oat Milk Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -362,6 +391,7 @@ const recipeData = [
   nutrition: 'A one cup serving of oat milk provides 130 calories, 15 grams of carbohydrates, 2.5 grams of fat, 0 grams of saturated fats, 2 grams of fiber, 4 grams of protein, 35 percent of your daily recommended allowance for calcium and 25 percent of your recommended daily allowance for vitamin D.' 
   },
   {
+    id: 'slug-29',
   name: 'Dairy-free Mango Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -375,6 +405,7 @@ const recipeData = [
   nutrition: 'The vitamins, minerals, and antioxidants in mangos can provide important health benefits. For example, vitamin K helps your blood clot effectively and helps prevent anemia. It also plays an important role in helping strengthen your bones.' 
   },
   {
+    id: 'slug-30',
   name: 'Avocado Banana Smoothie',
   dairy: false,
   flavor: 'veggie',
@@ -388,6 +419,7 @@ const recipeData = [
   nutrition: 'Avocados are a source of vitamins C, E, K, and B6, as well as riboflavin, niacin, folate, pantothenic acid, magnesium, and potassium. They also provide lutein, beta carotene, and omega-3 fatty acids. Avocados contain high levels of healthy, beneficial fats, which can help a person feel fuller between meals.' 
   },
   {
+    id: 'slug-31',
   name: 'Dairy-free Blueberry Banana Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -401,6 +433,7 @@ const recipeData = [
   nutrition: 'Blueberries are a healthy, stress-free food. You get fiber, vitamin C, vitamin K, manganese and potassium in every handful of blueberries at just 80 calories per cup. They are also low in sodium and have virtually no fat. It just feels good to feel good about what you eat.' 
   },
   {
+    id: 'slug-32',
   name: 'Dairy-free Chocolate Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -414,6 +447,7 @@ const recipeData = [
   nutrition: 'Bananas are a good source of several vitamins and minerals, especially potassium, vitamin B6, and vitamin C. One serving, or one medium ripe banana, provides about 28 grams carbohydrate, 15 grams sugar (naturally occurring), 3 grams fiber, and 450 mg potassium' 
   },
   {
+    id: 'slug-33',
   name: 'Cherry Acai Smoothie',
   dairy: false,
   flavor: 'fruity',
@@ -427,6 +461,7 @@ const recipeData = [
   nutrition: 'Cherries are low in calories and chock full of fiber, vitamins, minerals, nutrients, and other good-for-you ingredients. You will get vitamins C, A, and K. Each long-stemmed fruit delivers potassium, magnesium, and calcium too.' 
   },
   {
+    id: 'slug-34',
   name: 'Dairy-free Spinach Smoothie',
   dairy: false,
   flavor: 'veggie',
@@ -440,6 +475,7 @@ const recipeData = [
   nutrition: 'Spinach is rich in many nutrients, including Vitamin A, Vitamin C, Vitamin K, iron, folate, and potassium. Spinach is chock full of fiber.' 
   },
   {
+    id: 'slug-35',
   name: 'Kale Banana Smoothie',
   dairy: false,
   flavor: 'veggie',
@@ -453,6 +489,7 @@ const recipeData = [
   nutrition: 'Bananas are a good source of several vitamins and minerals, especially potassium, vitamin B6, and vitamin C. One serving, or one medium ripe banana, provides about 28 grams carbohydrate, 15 grams sugar (naturally occurring), 3 grams fiber, and 450 mg potassium' 
   },
   {
+    id: 'slug-36',
   name: 'Kiwi Smoothie',
   dairy: true,
   flavor: 'fruity',
@@ -466,6 +503,7 @@ const recipeData = [
   nutrition: 'Kiwis are high in Vitamin C and dietary fiber and provide a variety of health benefits. This tart fruit can support heart health, digestive health, and immunity. The kiwi is a healthy choice of fruit and is rich with vitamins and antioxidants.' 
   },
   {
+    id: 'slug-37',
   name: 'Pumpkin Smoothie',
   dairy: true,
   flavor: 'veggie',
@@ -527,7 +565,7 @@ function findRecipes(data, choices){
     const image = document.createElement("img");
     image.src = item.image;
     const link = document.createElement("a");
-    link.href = "recipe.html";
+    link.href = "recipe.html?id=" + item.id;
     link.textContent = 'link';
     container.appendChild(card);
     card.appendChild(h2);
@@ -535,9 +573,13 @@ function findRecipes(data, choices){
     card.appendChild(image);
     card.appendChild(link);
   });
-
 }
-
-
-
-
+var url_string = window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("id");
+if (c != null) getRecipeDetail(c);
+function getRecipeDetail(slug){
+  var result = recipeData.filter(x => x.id === slug);
+  document.getElementById('prep-time').innerHTML = result[0].preptime;
+  document.getElementById('description').innerHTML = result[0].summary;
+}
