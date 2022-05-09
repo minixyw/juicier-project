@@ -516,7 +516,7 @@ function findRecipes(data, choices){
     const image = document.createElement("img");
     image.src = item.image;
     const link = document.createElement("a");
-    link.href = "recipe.html";
+    link.href = "newrecipe.html";
     link.textContent = 'link';
     container.appendChild(card);
     card.appendChild(h2);
