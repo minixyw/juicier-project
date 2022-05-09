@@ -485,6 +485,17 @@ const recipeData = [
 
 
 
+const dairy = localStorage.getItem('dairy');
+const calorieValue = localStorage.getItem('calorieValue');
+const flavor = localStorage.getItem('flavor');
+
+let currentChoices = {
+  dairy: localStorage.getItem('dairy'),
+  calorieValue: localStorage.getItem('calorieValue'),
+  flavor:  localStorage.getItem('flavor')
+}
+
+
 const root = document.getElementById("main");
 const container = document.createElement("div");
 container.setAttribute("class", "container");
@@ -516,7 +527,7 @@ function findRecipes(data, choices){
     const image = document.createElement("img");
     image.src = item.image;
     const link = document.createElement("a");
-    link.href = "newrecipe.html";
+    link.href = "recipe.html";
     link.textContent = 'link';
     container.appendChild(card);
     card.appendChild(h2);
