@@ -485,43 +485,27 @@ const recipeData = [
 
 
 
-const dairy = localStorage.getItem('dairy');
-const calorieValue = localStorage.getItem('calorieValue');
-const flavor = localStorage.getItem('flavor');
+const root = document.getElementById("main");
+const container = document.createElement("div");
+container.setAttribute("class", "container");
+root.appendChild(container);
 
-let currentChoices = {
-  dairy: localStorage.getItem('dairy'),
-  calorieValue: localStorage.getItem('calorieValue'),
-  flavor:  localStorage.getItem('flavor')
-}
+const CAL_THRESHOLD = 200;
 
-//findRecipes(recipeData, currentChoices);
-//recipeDetails(recipeData);
-let matchedRecipes = [];
-recipeData.forEach((recipe) => {
-      
-  if (recipe.dairy == currentChoices.dairy && recipe.flavor == currentChoices.flavor && recipe.calorieValue == currentChoices.calorieValue)  {
-    matchedRecipes.push(recipe);
-  } 
-  });
+findRecipes(recipeData, currentChoices);
+console.log(currentChoices);
+function findRecipes(data, choices){
+  let matchedRecipes = [];
+  data.forEach((recipe) => {
+    //console.log(recipe);
+   // console.log(recipe.flavor);
+    if (recipe.dairy == choices.dairy && recipe.flavor == choices.flavor && recipe.calorieValue == choices.calorieValue)  {
+      matchedRecipes.push(recipe);
+    } 
 
-console.log(matchedRecipes);
+    });
+    console.log(matchedRecipes);
 
-function findRecipes(){
-
-  const root = document.getElementById("main");
-  const container = document.createElement("div");
-  container.setAttribute("class", "container");
-  root.appendChild(container);
-  /*
-let chosenRecipe = [];
-
-  matchedRecipes.forEach(recipe => {
-    if(recipe.name) {
-      chosenRecipe.push(recipe);
-    }
-  });
-  */
     matchedRecipes.forEach( item => {
     const card = document.createElement("div");
     card.setAttribute("class", "card");
@@ -532,8 +516,7 @@ let chosenRecipe = [];
     const image = document.createElement("img");
     image.src = item.image;
     const link = document.createElement("a");
-    link.setAttribute("id", "links");
-    link.href = "newrecipe.html";
+    link.href = "recipe.html";
     link.textContent = 'link';
     container.appendChild(card);
     card.appendChild(h2);
@@ -541,60 +524,9 @@ let chosenRecipe = [];
     card.appendChild(image);
     card.appendChild(link);
   });
+
 }
 
 
-function recipeDetails(data) {
-  let chosenRecipe = [];
 
-  data.forEach(recipe => {
-    if(recipe.name) {
-      chosenRecipe.push(recipe);
-    }
-  });
-  
-  chosenRecipe.forEach(item => {
-    const ingre = item.ingredients;
-    const dir = item.direction;
-    
-    const div1 = document.getElementById("recipe-summary");
-    const pTime = document.createElement("p")
-    pTime.textContent = item.preptime;
-    const pSummary = document.createElement("p");
-    pSummary.textContent = item.summary;
-    div1.appendChild(pTime);
-    div1.appendChild(pSummary);
 
-    const div2 = document.getElementById("recipe-info");
-    const hName = document.createElement("h2");
-    hName.textContent = item.name;
-    const pCalories = document.createElement("p");
-    pCalories.textContent = "Calories per serving: " + item.calories;
-    div2.appendChild(hName);
-    div2.appendChild(pCalories);
-
-    const sec1 = document.getElementById("ingredients");
-    const ul = document.createElement("ul");
-    sec1.appendChild(ul);
-    ingre.forEach(ingrelist =>{
-      let li = document.createElement("li");
-      li.textContent = ingrelist;
-      ul.appendChild(li);
-    });
-
-    const sec2 = document.getElementById("direction");
-    const ol = document.createElement("ol");
-    sec2.appendChild(ol);
-    dir.forEach(directionList => {
-      let li2 = document.createElement("li")
-      li2.textContent = directionList;
-      ol.appendChild(li2);
-    });
-    
-    const sec3 = document.getElementById("facts");
-    const pFacts = document.createElement("p");
-    pFacts.textContent = item.nutrition;
-    sec3.appendChild(pFacts);
-
-  });
-}
