@@ -540,9 +540,6 @@ container.setAttribute("class", "container");
 root.appendChild(container);
 
 const CAL_THRESHOLD = 200;
-
-findRecipes(recipeData, currentChoices);
-console.log(currentChoices);
 function findRecipes(data, choices){
   let matchedRecipes = [];
   data.forEach((recipe) => {
@@ -577,9 +574,25 @@ function findRecipes(data, choices){
 var url_string = window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("id");
-if (c != null) getRecipeDetail(c);
+if (c != null) getRecipeDetail(c); else findRecipes(recipeData, currentChoices);
 function getRecipeDetail(slug){
   var result = recipeData.filter(x => x.id === slug);
   document.getElementById('prep-time').innerHTML = result[0].preptime;
   document.getElementById('description').innerHTML = result[0].summary;
+  document.getElementById('recipe-name').innerHTML = result[0].name;
+  document.getElementById('calorie-serving').innerHTML = result[0].calories;
+  document.getElementById('recipe-img').style.backgroundImage = "url('"+result[0].image+"')";
+  var html_string = "<ul>";
+  result[0].ingredients.forEach(function loopArr(value, index, array){
+    html_string += "<li>"+value+"</li>";
+  });
+  html_string += "</ul>";
+  document.getElementById('ingredients-section').innerHTML = html_string;
+  html_string = "<ol>";
+  result[0].direction.forEach(function loopArr(value, index, array){
+    html_string += "<li>"+value+"</li>";
+  });
+  html_string += "</ol>";
+  document.getElementById('directions-section').innerHTML = html_string;
+  document.getElementById('nutrition-detail').innerHTML = result[0].nutrition;
 }
