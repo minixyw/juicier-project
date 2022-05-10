@@ -482,11 +482,19 @@ html {
     text-align: center;
     padding: 0;
   }
+
 }
 
 
 
 
-.opps h1 {
+#main .opps {
   text-align: center;
+  padding-top: 35px;
+}
+
+#main .opps img {
+  width: 65%;
+  padding: 20px;
+  margin-bottom: 50px;
 }
