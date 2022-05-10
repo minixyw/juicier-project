@@ -563,7 +563,7 @@ function findRecipes(data, choices){
     image.src = item.image;
     const link = document.createElement("a");
     link.href = "recipe.html?id=" + item.id;
-    link.textContent = 'link';
+    link.textContent = 'MORE';
     container.appendChild(card);
     card.appendChild(h2);
     card.appendChild(h3);
